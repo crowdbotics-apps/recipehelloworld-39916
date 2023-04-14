@@ -15,7 +15,10 @@ const Row = ({
       </View>;
 };
 
-const ManyRows = () => {
+const ManyRows = ({
+  route
+}) => {
+  const {} = route.params || {};
   const [data, setData] = React.useState();
   useEffect(() => {
     setData([{
